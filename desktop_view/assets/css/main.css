@@ -1,0 +1,27 @@
+*{
+    margin: 0 ;
+    padding: 0;
+}
+
+body{
+    background-color: #b2d6fc;
+}
+
+.back_design_overlay_1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-clip-path: polygon(100% 12%, 100% 100%, 10% 100%, 85% 81%);
+    clip-path: polygon(100% 12%, 100% 100%, 10% 100%, 85% 81%);
+    background-color: #226dbc;
+    z-index: -1;
+}
+.back_design_overlay_2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 81% 74%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 81% 74%);
+    background-color: #1d5c9e;
+    z-index: -2;
+}
