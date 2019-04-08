@@ -1,0 +1,1 @@
+alert("The mobile view is under contruction");
