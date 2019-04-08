@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.sidenav{
+    position: relative;
+    height: 93.4vh;
+    width: 80px;
+    color: rgb(68, 68, 68);
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 40px;
+}
+.nav-icon{
+    margin: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+.nav-icon:nth-child(1){
+    margin-top: 0;
+}
+.right-move{
+    position: relative;
+    transition: 1s;
+}
+.right-1{
+    left: -100px;
+}
+.right-2{
+    left: -106px;
+}
+.right-3{
+    left: -150px;
+}
+.right-4{
+    left:-80px;
+}
+.nav-icon:hover .right-move{
+    left: 0;
+}
