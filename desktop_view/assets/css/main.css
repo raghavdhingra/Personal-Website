@@ -21,7 +21,7 @@ body{
     height: 100%;
     width: 100%;
     -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 81% 74%);
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 81% 74%);
+clip-path: polygon(100% 0, 100% 100%, 0 100%, 81% 74%);
     background-color: #1d5c9e;
     z-index: -2;
 }
