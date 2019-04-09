@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #b2d6fc;
+    background:linear-gradient(25deg, rgb(122, 126, 128), rgb(231, 242, 243),rgb(160, 168, 170));
 }
 
 .back_design_overlay_1{
@@ -13,7 +13,7 @@ body{
     width: 100%;
     -webkit-clip-path: polygon(100% 12%, 100% 100%, 10% 100%, 85% 81%);
     clip-path: polygon(100% 12%, 100% 100%, 10% 100%, 85% 81%);
-    background-color: #226dbc;
+    background:linear-gradient(25deg, rgba(76, 78, 80, 0.521), rgba(229, 236, 236, 0.575),rgba(105, 107, 107, 0.541));
     z-index: -1;
 }
 .back_design_overlay_2{
@@ -21,7 +21,11 @@ body{
     height: 100%;
     width: 100%;
     -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 81% 74%);
-clip-path: polygon(100% 0, 100% 100%, 0 100%, 81% 74%);
-    background-color: #1d5c9e;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 81% 74%);
+    background:linear-gradient(25deg, rgba(95, 102, 105, 0.507), rgba(223, 235, 236, 0.582),rgba(110, 124, 128, 0.507));
     z-index: -2;
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: 100px auto 80px;
 }
