@@ -1,0 +1,12 @@
+.follow-bottom{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    margin: 15px;
+    font-size: 30px;
+}
+.follow-bottom i{
+    margin-bottom: 30px;
+    color: rgb(66, 66, 66);
+    cursor: pointer;
+}
