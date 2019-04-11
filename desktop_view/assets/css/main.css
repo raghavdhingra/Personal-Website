@@ -34,7 +34,7 @@ body{
 .main-content{
     position: relative;
     margin-top: 5%;
-    left:20%;
+    left: 40%;
     font-size: 35px;
     color: rgb(95, 95, 95);
     text-shadow: 2px 1px #535353;
@@ -53,10 +53,26 @@ td:nth-child(1){
 td:nth-child(2){
     width: 300px;
     position: relative;
-    transform: translate(-30%,0%);
+    transform: translate(-25%,0%);
 }
 .name{
     font-size: 2.7em;
     position: relative;
     top:10px;
+}
+.skill-column{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-clip-path: polygon(0 61%, 37% 67%, 33% 100%, 0% 100%);
+    clip-path: polygon(0 61%, 37% 67%, 33% 100%, 0% 100%);
+    background:linear-gradient(25deg, rgba(245, 245, 245, 0.356), rgba(0, 0, 0, 0.486),rgba(218, 218, 218, 0.301));
+}
+.skill-column-back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-clip-path: polygon(0 59%, 38% 66%, 34% 100%, 0% 100%);
+    clip-path: polygon(0 59%, 38% 66%, 34% 100%, 0% 100%);
+    background:linear-gradient(25deg, rgba(95, 102, 105, 0.541), rgba(184, 187, 187, 0.671),rgba(110, 124, 128, 0.479));
 }
