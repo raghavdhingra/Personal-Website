@@ -31,3 +31,20 @@ body{
     display: grid;
     grid-template-columns: 100px auto 80px;
 }
+.main-content{
+    position: relative;
+    margin-top: 30%;
+    left:30%;
+    font-size: 35px;
+    color: rgb(95, 95, 95);
+    text-shadow: 2px 1px #535353;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-transform: capitalize;
+}
+td:nth-child(1){
+    text-align: center;
+    transform: rotate(270deg);
+    width: 150px;
+    padding: 0;
+    font-size: 80px;
+}
