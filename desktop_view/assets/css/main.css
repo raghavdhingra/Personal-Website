@@ -48,3 +48,13 @@ td:nth-child(1){
     padding: 0;
     font-size: 80px;
 }
+td:nth-child(2){
+    width: 300px;
+    position: relative;
+    transform: translate(-20%,0%);
+}
+.name{
+    font-size: 90px;
+    position: relative;
+    top:10px;
+}
