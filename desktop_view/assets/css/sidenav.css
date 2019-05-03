@@ -19,6 +19,24 @@
 .nav-toggle-btn:hover .open{
     background: rgb(77, 184, 255);
 }
+.close{
+    position: relative;
+    height: 5px;
+    width: 30px;
+    transition: 0.3s;
+    top: 2.5px;
+    background: rgb(105, 105, 105);
+    border-radius: 20px;
+    transform: rotate(135deg);
+}
+.close:nth-child(2){
+    top: -2.5px;
+    transform: rotate(-135deg);
+}
+
+.nav-toggle-btn:hover .close{
+    background: rgb(77, 184, 255);
+}
 .sidenav{
     position: relative;
     height: 94vh;
