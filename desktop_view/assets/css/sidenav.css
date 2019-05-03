@@ -2,8 +2,11 @@
 
 .sidenav{
     position: relative;
-    height: 93.4vh;
+    height: 94vh;
+    top: -20px;
     width: 10px;
+    margin-left: -200px;
+    transition: 0.5s;
     color: rgb(97, 97, 97);
     padding: 10px;
     font-size: 30px;
