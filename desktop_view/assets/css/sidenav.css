@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
+.nav-toggle-btn{
+    position: relative;
+    margin: 35px;
+    cursor: pointer;
+}
+.open{
+    position: relative;
+    height: 5px;
+    width: 30px;
+    transition: 0.3s;
+    background: rgb(105, 105, 105);
+    border-radius: 20px;
+}
+.open:nth-child(2){
+    top: 5px;
+}
+.nav-toggle-btn:hover .open{
+    background: rgb(77, 184, 255);
+}
 .sidenav{
     position: relative;
     height: 94vh;
