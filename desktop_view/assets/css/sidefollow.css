@@ -9,4 +9,8 @@
     margin-bottom: 30px;
     color: rgb(66, 66, 66);
     cursor: pointer;
+    transition: 0.25s;
+}
+.follow-bottom i:hover{
+    color: rgb(77, 184, 255);
 }
