@@ -4,6 +4,7 @@
     margin-bottom: 10px;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 2;
 }
 .social-btn:hover{
     transform: rotate(180deg);
@@ -23,4 +24,28 @@
 }
 .follow-bottom i:hover{
     color: rgb(77, 184, 255);
+}
+.flw{
+    position: relative;
+    transition: 0.5s;
+    opacity: 0;
+}
+#flw1{
+    top: 370px;
+}
+#flw2{
+    top: 310px;
+    transition-delay: 0.05s;
+}
+#flw3{
+    top: 250px;
+    transition-delay: 0.1s;
+}
+#flw4{
+    top: 190px;
+    transition-delay: 0.15s;
+}
+#flw5{
+    top: 130px;
+    transition-delay: 0.2s;
 }
