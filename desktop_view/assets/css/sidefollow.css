@@ -1,3 +1,13 @@
+.social-btn{
+    height: 35px;
+    width: 35px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.social-btn:hover{
+    transform: rotate(180deg);
+}
 .follow-bottom{
     position: absolute;
     bottom: 0;

@@ -12,6 +12,7 @@
     transition: 0.3s;
     background: rgb(105, 105, 105);
     border-radius: 20px;
+    cursor: pointer;
 }
 .open:nth-child(2){
     top: 5px;
@@ -23,6 +24,7 @@
     position: relative;
     height: 5px;
     width: 30px;
+    cursor: pointer;
     transition: 0.3s;
     top: 2.5px;
     background: rgb(105, 105, 105);
@@ -61,6 +63,7 @@
 .right-move{
     position: relative;
     transition: 1s;
+    cursor: pointer;
 }
 .right-1{
     left: -100px;
@@ -78,6 +81,7 @@
     left: 0;
 }
 .side-anim{
+    cursor: pointer;
     opacity: 0;
 }
 .nav-icon:hover .side-anim{
