@@ -1,2 +1,2 @@
 # Personal-Website
-This is the main portfolio website
+This is the my personal portfolio website
