@@ -168,3 +168,32 @@ td:nth-child(2){
         opacity: 1;
     }
 }
+.am-anim{
+    display: inline-block;
+    font-size: 2em;
+    animation: am_anim 1s ease 1 forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+@keyframes am_anim{
+    from{
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.raghav-anim{
+    animation: am_anim 1s ease 1 forwards;
+    opacity: 0;
+    display: inline-block;
+    animation-delay: 1s;
+}
+.dhingra-anim{
+    animation: am_anim 1s ease 1 forwards;
+    opacity: 0;
+    display: inline-block;
+    animation-delay: 1.5s;
+}
