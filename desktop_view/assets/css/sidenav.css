@@ -44,7 +44,7 @@
     height: 94vh;
     top: -20px;
     width: 10px;
-    margin-left: -200px;
+    transform: translateX(-200px);
     transition: 0.5s;
     color: rgb(97, 97, 97);
     padding: 10px;
@@ -61,24 +61,23 @@
     margin-top: 0;
 }
 .right-move{
-    position: relative;
     transition: 1s;
     cursor: pointer;
 }
 .right-1{
-    left: -100px;
+    transform: translate(-100px);
 }
 .right-2{
-    left: -106px;
+    transform: translate(-106px);
 }
 .right-3{
-    left: -150px;
+    transform: translate(-150px);
 }
 .right-4{
-    left:-80px;
+    transform: translate(-80px);
 }
 .nav-icon:hover .right-move{
-    left: 0;
+    transform: translate(0);
 }
 .side-anim{
     cursor: pointer;

@@ -3,7 +3,8 @@ const toggle_1 = document.getElementById("toggle-1");
 const toggle_2 = document.getElementById("toggle-2");
 
 const open = () => {
-    sidenav.style.marginLeft="0"; 
+    sidenav.style.transform="translateX(0)";
+    sidenav.style.opacity=1; 
     toggle_1.classList.remove("open");
     toggle_2.classList.remove("open");
     toggle_1.classList.add("close");
@@ -11,7 +12,8 @@ const open = () => {
 }
 
 const close = () => {
-    sidenav.style.marginLeft="-200px";
+    sidenav.style.transform="translate(-200px)";
+    sidenav.style.opacity=0;
     toggle_1.classList.remove("close");
     toggle_2.classList.remove("close");
     toggle_1.classList.add("open");
