@@ -1,0 +1,50 @@
+.social-btn{
+    height: 35px;
+    width: 35px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 2;
+}
+.social-btn:hover{
+    transform: rotate(180deg);
+}
+.follow-bottom{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    margin: 15px;
+    font-size: 30px;
+}
+.follow-bottom i{
+    margin-bottom: 30px;
+    color: rgb(66, 66, 66);
+    cursor: pointer;
+    transition: 0.25s;
+}
+.follow-bottom i:hover{
+    color: rgb(77, 184, 255);
+}
+.flw{
+    transition: 0.5s;
+    opacity: 0;
+}
+#flw1{
+    transform: translateY(370px);
+}
+#flw2{
+    transform: translateY(310px);
+    transition-delay: 0.05s;
+}
+#flw3{
+    transform: translateY(250px);
+    transition-delay: 0.1s;
+}
+#flw4{
+    transform: translateY(190px);
+    transition-delay: 0.15s;
+}
+#flw5{
+    transform: translateY(130px);
+    transition-delay: 0.2s;
+}
