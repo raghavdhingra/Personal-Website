@@ -26,26 +26,25 @@
     color: rgb(77, 184, 255);
 }
 .flw{
-    position: relative;
     transition: 0.5s;
     opacity: 0;
 }
 #flw1{
-    top: 370px;
+    transform: translateY(370px);
 }
 #flw2{
-    top: 310px;
+    transform: translateY(310px);
     transition-delay: 0.05s;
 }
 #flw3{
-    top: 250px;
+    transform: translateY(250px);
     transition-delay: 0.1s;
 }
 #flw4{
-    top: 190px;
+    transform: translateY(190px);
     transition-delay: 0.15s;
 }
 #flw5{
-    top: 130px;
+    transform: translateY(130px);
     transition-delay: 0.2s;
 }
