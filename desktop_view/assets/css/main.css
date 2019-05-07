@@ -19,6 +19,17 @@ body{
     clip-path: polygon(100% 12%, 100% 100%, 10% 100%, 85% 81%);
     background:linear-gradient(25deg, rgba(76, 78, 80, 0.521), rgba(229, 236, 236, 0.575),rgba(105, 107, 107, 0.541));
     z-index: -1;
+    animation: backdesign 1s ease 1 forwards;
+    transform: translate(50%,50%);
+    animation-delay: 1.5s;
+}
+@keyframes backdesign{
+    from{
+        transform: translate(50%,50%);
+    }
+    to{
+        transform: translate(0,0);
+    }
 }
 .back_design_overlay_2{
     position: absolute;
@@ -32,60 +43,4 @@ body{
 .main-grid{
     display: grid;
     grid-template-columns: 100px auto 80px;
-}
-.main-content{
-    position: relative;
-    margin-top: 5%;
-    left: 40%;
-    font-size: 35px;
-    color: rgb(95, 95, 95);
-    text-shadow: 2px 1px #535353;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-transform: capitalize;
-}
-td:nth-child(1){
-    text-align: center;
-    transform: rotate(270deg);
-    width: 150px;
-    padding: 0;
-    font-size: 3.2em;
-    position: relative;
-    top:-10px;
-}
-td:nth-child(2){
-    width: 300px;
-    position: relative;
-    transform: translate(-25%,0%);
-}
-.name{
-    font-size: 2.7em;
-    position: relative;
-    top:10px;
-}
-.skill-column{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    -webkit-clip-path: polygon(0 61%, 37% 67%, 33% 100%, 0% 100%);
-    clip-path: polygon(0 61%, 37% 67%, 33% 100%, 0% 100%);
-    background:linear-gradient(25deg, rgba(245, 245, 245, 0.356), rgba(0, 0, 0, 0.486),rgba(218, 218, 218, 0.301));
-}
-.skill-column-back{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    -webkit-clip-path: polygon(0 59%, 38% 66%, 34% 100%, 0% 100%);
-    clip-path: polygon(0 59%, 38% 66%, 34% 100%, 0% 100%);
-    background:linear-gradient(25deg, rgba(95, 102, 105, 0.541), rgba(184, 187, 187, 0.671),rgba(110, 124, 128, 0.479));
-}
-
-.my-skills{
-    position: absolute;
-    font-size: 25px;
-    text-transform: capitalize;
-    font-family: 'Acme', sans-serif;
-    color: rgb(230, 230, 230);
-    bottom: 20px;
-    text-shadow: #535353 2px 1px;
-    margin-left: 7%;
 }
