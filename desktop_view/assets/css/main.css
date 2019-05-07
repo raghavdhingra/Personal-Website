@@ -120,3 +120,51 @@ td:nth-child(2){
     animation: skill_anim 1s ease 1 forwards;
     animation-delay: 3.5s;
 }
+.skill-name{
+    opacity: 0;
+    animation: skill_anim 1s ease 1 forwards;
+    animation-delay: 4s;
+    z-index: 1;
+    display: inline-block;
+}
+
+.skill-name span::after{
+    display: block;
+    content: "";
+    height: 10px;
+    margin: -15px;
+    opacity: 0.3;
+    border-radius: 2px;
+    box-shadow: 2px 2px 20px 2px #000;
+    width: auto;
+    background: #ffffff;
+    z-index: -1;
+}
+
+@keyframes skill_anim{
+    from{
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.hello-anim{
+    opacity: 0;
+    animation: hello_anim 1s ease 1 forwards;
+    animation-delay: 0s;
+}
+@keyframes hello_anim{
+    from{
+        transform: translateY(-400px) rotate(270deg);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0) rotate(270deg);
+        opacity: 1;
+    }
+}
