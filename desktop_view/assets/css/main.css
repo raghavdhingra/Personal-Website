@@ -4,6 +4,7 @@
     margin: 0 ;
     padding: 0;
     cursor: default;
+    --time: 0s;
 }
 
 body{
@@ -19,26 +20,34 @@ body{
     clip-path: polygon(100% 12%, 100% 100%, 10% 100%, 85% 81%);
     background:linear-gradient(25deg, rgba(76, 78, 80, 0.521), rgba(229, 236, 236, 0.575),rgba(105, 107, 107, 0.541));
     z-index: -1;
+    transform: scaleX(0);
     animation: backdesign 1s ease 1 forwards;
-    transform: translate(50%,50%);
-    animation-delay: 1.5s;
+    animation-delay: calc(var(--time) + 2s);
 }
 @keyframes backdesign{
-    from{
-        transform: translate(50%,50%);
+    0%{
+        transform: scaleX(0);
+        opacity: 0;
     }
-    to{
-        transform: translate(0,0);
+    25%{
+        opacity: 0
+    }
+    100%{
+        transform: scaleX(1);
+        opacity: 1;
     }
 }
 .back_design_overlay_2{
     position: absolute;
     height: 100%;
     width: 100%;
+    transform: scaleX(0);
     -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 81% 74%);
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 81% 74%);
     background:linear-gradient(25deg, rgba(95, 102, 105, 0.507), rgba(223, 235, 236, 0.582),rgba(110, 124, 128, 0.507));
     z-index: -2;
+    animation: backdesign 1s ease 1 forwards;
+    animation-delay: calc( var(--time) + 1.5s);
 }
 .main-grid{
     display: grid;
@@ -79,13 +88,13 @@ td:nth-child(2){
     -webkit-clip-path: polygon(0 51%, 37% 67%, 33% 100%, 0% 100%);
     clip-path: polygon(0 51%, 37% 67%, 33% 100%, 0% 100%);
     background:linear-gradient(25deg, rgba(245, 245, 245, 0.356), rgba(0, 0, 0, 0.486),rgba(218, 218, 218, 0.301));
-    animation: backdesign_2 2s ease 1 forwards;
-    animation-delay: 2.5s;
+    animation: backdesign_2 0.9s ease 1 forwards;
+    animation-delay: calc(var(--time) + 2.7s);
     transform: translate(-50%,50%);
 }
 @keyframes backdesign_2{
     from{
-        transform: translate(-50%,50%);
+        transform: translate(-50%,0);
     }
     to{
         transform: translate(0,0);
@@ -94,10 +103,13 @@ td:nth-child(2){
 .skill-column-back{
     position: absolute;
     height: 100%;
+    transform: translate(-50%,50%);
     width: 100%;
     -webkit-clip-path: polygon(0 49%, 38% 66%, 34% 100%, 0% 100%);
     clip-path: polygon(0 49%, 38% 66%, 34% 100%, 0% 100%);
     background:linear-gradient(25deg, rgba(95, 102, 105, 0.541), rgba(184, 187, 187, 0.671),rgba(110, 124, 128, 0.479));
+    animation: backdesign_2 1.5s ease 1 forwards;
+    animation-delay: calc(var(--time) + 2.2s);
 }
 
 .my-skills{
@@ -118,12 +130,12 @@ td:nth-child(2){
     opacity: 0;
     display: inline-block;
     animation: skill_anim 1s ease 1 forwards;
-    animation-delay: 3.5s;
+    animation-delay: calc(var(--time) + 3.2s);
 }
 .skill-name{
     opacity: 0;
     animation: skill_anim 1s ease 1 forwards;
-    animation-delay: 4s;
+    animation-delay: calc(var(--time) + 3.7s);
     z-index: 1;
     display: inline-block;
 }
@@ -156,7 +168,7 @@ td:nth-child(2){
 .hello-anim{
     opacity: 0;
     animation: hello_anim 1s ease 1 forwards;
-    animation-delay: 0s;
+    animation-delay: var(--time);
 }
 @keyframes hello_anim{
     from{
@@ -172,7 +184,7 @@ td:nth-child(2){
     display: inline-block;
     font-size: 2em;
     animation: am_anim 1s ease 1 forwards;
-    animation-delay: 0.5s;
+    animation-delay: calc(var(--time) + 0.5s);
     opacity: 0;
 }
 @keyframes am_anim{
@@ -189,11 +201,18 @@ td:nth-child(2){
     animation: am_anim 1s ease 1 forwards;
     opacity: 0;
     display: inline-block;
-    animation-delay: 1s;
+    animation-delay: calc(var(--time) + 1s);
 }
 .dhingra-anim{
     animation: am_anim 1s ease 1 forwards;
     opacity: 0;
     display: inline-block;
-    animation-delay: 1.5s;
+    animation-delay: calc(var(--time) + 1.5s);
+}
+
+.opac-anim{
+    opacity: 0;
+    transform: scale(0);
+    animation: backdesign 1s ease 1 forwards;
+    animation-delay: calc(var(--time) + 4s);
 }
