@@ -4,7 +4,7 @@
     margin: 0 ;
     padding: 0;
     cursor: default;
-    --time: 0s;
+    --time: 4.5s;
 }
 
 body{
@@ -114,7 +114,7 @@ td:nth-child(2){
 
 .my-skills{
     position: absolute;
-    font-size: 25px;
+    font-size: 24px;
     text-transform: capitalize;
     font-family: 'Acme', sans-serif;
     color: rgb(230, 230, 230);
