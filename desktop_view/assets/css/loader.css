@@ -1,342 +1,75 @@
-fds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fdsfds
-ds
-feBlendf
-defsds
-fds
-
-ddsf
-descfdfs
-
-defsdsf
-descfds
-fds
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    --len: 0;
+}
+.loader-back{
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+    animation: load_back 1s ease 1 forwards;    
+    animation-delay: 1s;
+}
+@keyframes load_back{
+    15%{
+        background: rgba(0,0,0, 0.486);
+    }
+    50%{
+        background: #ffffff;
+    }
+    75%{
+        background: linear-gradient(25deg, rgb(122, 126, 128), rgba(255, 255, 255, 0.356),rgba(255, 255, 255, 0.301));
+    }
+    88.5%{
+        background: linear-gradient(25deg, rgb(122, 126, 128), rgb(231, 242, 243),rgba(255, 255, 255, 0.301));
+    }
+    100%{
+        background: linear-gradient(25deg, rgb(122, 126, 128), rgb(231, 242, 243),rgb(160, 168, 170));
+    }
+}
+.loader{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.loader::before,.loader::after{
+    content: "";
+    height: 0.2em;
+    margin: 0.4em;
+    background: #000;
+}
+.loader::before{
+    flex: var(--len);
+}
+.loader::after{
+    flex: calc(10 - var(--len));
+}
+.loader-class{
+    animation: loader-opac 0.5s 4.5s ease 1 forwards;
+    opacity: 1;
+    display: block;
+}
+@keyframes loader-opac{
+    0%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
