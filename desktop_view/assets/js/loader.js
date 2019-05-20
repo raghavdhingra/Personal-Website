@@ -45,14 +45,13 @@ const incrementor = () => {
         else {
             clearInterval(pos_int);
         }
-        console.log(posX);
     },5);
     setTimeout(()=>{
         var pos_sec_int = setInterval(()=>{
             if (posX < 5){
                 posX+=0.01;
                 pos.setProperty('--len',posX);
-                console.log(posX);
+    
             }
             else{
                 clearInterval(pos_sec_int);
@@ -64,7 +63,7 @@ const incrementor = () => {
             if (posX<10) {
                 posX+=0.1;
                 pos.setProperty('--len',posX);
-                console.log(posX);
+    
             }
             else {
                 clearInterval(pos_third_int);
