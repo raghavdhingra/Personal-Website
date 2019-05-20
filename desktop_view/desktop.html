@@ -89,12 +89,23 @@
 
     <!--Follow Links-->
         <div class="follow-link">
+            <div class="pagination">
+                <ul id="page_index">
+                    <center>
+                        <li id="page_1">
+                            <div class="active"></div>
+                        </li>
+                        <li id="page_2"></li>
+                        <li id="page_3"></li>
+                    </center>
+                </ul>
+            </div>
                 <div class="follow-bottom">
-                        <i class="fab fa-facebook-f flw" id="flw1"></i>
-                        <i class="fab fa-twitter flw" id="flw2"></i>
-                        <i class="fab fa-github flw" id="flw3"></i>
-                        <i class="fab fa-linkedin-in flw" id="flw4"></i>
-                        <i class="far fa-envelope flw" id="flw5"></i>
+                        <i class="fab fa-facebook-f flw" id="flw1"></i><span class="follow-class fb" id="tip1">Facebook</span>
+                        <i class="fab fa-twitter flw" id="flw2"></i><span class="follow-class twt" id="tip2">Twitter</span>
+                        <i class="fab fa-github flw" id="flw3"></i><span class="follow-class gtb" id="tip3">Github</span>
+                        <i class="fab fa-linkedin-in flw" id="flw4"></i><span class="follow-class lkd" id="tip4">Linkedin</span>
+                        <i class="far fa-envelope flw" id="flw5"></i><span class="follow-class ml" id="tip5">Mail</span>
                         <div class="opac-anim" onclick="follow_toggle();"><img src="./assets/imgs/network.png" class="social-btn"></div>
                 </div>
         </div>
